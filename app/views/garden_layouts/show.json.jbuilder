@@ -1,0 +1,1 @@
+json.partial! "garden_layouts/garden_layout", garden_layout: @garden_layout

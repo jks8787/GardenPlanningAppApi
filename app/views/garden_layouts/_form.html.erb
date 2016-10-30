@@ -1,0 +1,32 @@
+<%= form_for(garden_layout) do |f| %>
+  <% if garden_layout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(garden_layout.errors.count, "error") %> prohibited this garden_layout from being saved:</h2>
+
+      <ul>
+      <% garden_layout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= f.label :compeleted %>
+    <%= f.check_box :compeleted %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @garden_layout.id %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @garden_layout.data %>
+</p>
+
+<p>
+  <strong>Compeleted:</strong>
+  <%= @garden_layout.compeleted %>
+</p>
+
+<%= link_to 'Edit', edit_garden_layout_path(@garden_layout) %> |
+<%= link_to 'Back', garden_layouts_path %>

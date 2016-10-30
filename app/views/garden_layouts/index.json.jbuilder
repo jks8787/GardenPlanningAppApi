@@ -1,0 +1,1 @@
+json.array! @garden_layouts, partial: 'garden_layouts/garden_layout', as: :garden_layout

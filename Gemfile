@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
+gem 'simple_command'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
