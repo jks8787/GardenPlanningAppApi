@@ -4,8 +4,7 @@ class GardenLayoutsController < ApplicationController
   # GET /garden_layouts
   # GET /garden_layouts.json
   def index
-    @garden_layouts = GardenLayout.all
-    render json: @garden_layouts.all.to_json
+    render json: current_user.garden_layouts.to_json
   end
 
   # GET /garden_layouts/1
